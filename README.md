@@ -69,7 +69,7 @@ Let's first draw what the output of each individual layer is on the positive pat
 
 
 Output table of functions:
-|-----------------------------------------------|
+
 |      |    Positive Input  |   Negative Input  |
 | ---- | ------------------ | ----------------- |
 | ReLU |    +               |   0               |
@@ -80,7 +80,6 @@ Output table of functions:
 | LUUL |    -               |   -               |
 | ULUL |    -               |   +               |
 | LULU |    +               |   -               |
-| ---- | ------------------ | ----------------- |
 
 
 The positive paths that we are hinted at (layers starting with "p") is:
@@ -178,6 +177,10 @@ torch.save(model.state_dict(), 'solve_weights.pth')
 ```
 
 
-Upload these weight on the inference website gives the flag:
+Uploading these weight on the inference website gives the flag:
 
 ![alt text](pics/flag.png)
+
+
+The flag is a reference to the well-known @ptrblck (Piotr Bialecki), a NVIDIA engineer that is very active on PyTorch forums
+![GTG7IPSagAA4utU](https://github.com/user-attachments/assets/fd4afe2e-249e-4b79-a56f-5f6e06214d63)
